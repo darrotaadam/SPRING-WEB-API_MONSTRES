@@ -1,3 +1,21 @@
 spring:
   application:
     name: monsters
+  data:
+    mongodb:
+      host: mongo-monstres
+      port: 27017
+      username: admin
+      password: passadmin
+      authentication-database: admin
+      database: monstresdb
+  profiles:
+    active: docker
+
+auth:
+  hostname: api-auth
+  port: 8080
+
+monstres:
+  hostname: api-monstres
+  port: 8080
