@@ -1,15 +1,15 @@
-package imt.fisa.monsters.services.factories;
+package imt.fisa.monsters.persistence.dto;
 
 public class Skill {
 
-    private int num;
-    private int dmg;
+    private Integer num;
+    private Integer dmg;
     private String ratio_stat;
-    private int ratio_percent;
-    private int cooldown;
-    private float lootrate;
+    private Integer ratio_percent;
+    private Integer cooldown;
+    private Float lootrate;
 
-    public Skill(int num, int dmg, String ratio_stat, int ratio_percent, int cooldown, float lootrate) {
+    public Skill(Integer num, Integer dmg, String ratio_stat, Integer ratio_percent, Integer cooldown, Float lootrate) {
         this.num = num;
         this.dmg = dmg;
         this.ratio_stat = ratio_stat;
@@ -19,19 +19,19 @@ public class Skill {
     }
 
 
-    public int getNum() {
+    public Integer getNum() {
         return num;
     }
 
-    public void setNum(int num) {
+    public void setNum(Integer num) {
         this.num = num;
     }
 
-    public int getDmg() {
+    public Integer getDmg() {
         return dmg;
     }
 
-    public void setDmg(int dmg) {
+    public void setDmg(Integer dmg) {
         this.dmg = dmg;
     }
 
@@ -43,27 +43,27 @@ public class Skill {
         this.ratio_stat = ratio_stat;
     }
 
-    public int getRatio_percent() {
+    public Integer getRatio_percent() {
         return ratio_percent;
     }
 
-    public void setRatio_percent(int ratio_percent) {
+    public void setRatio_percent(Integer ratio_percent) {
         this.ratio_percent = ratio_percent;
     }
 
-    public int getCooldown() {
+    public Integer getCooldown() {
         return cooldown;
     }
 
-    public void setCooldown(int cooldown) {
+    public void setCooldown(Integer cooldown) {
         this.cooldown = cooldown;
     }
 
-    public float getLootrate() {
+    public Float getLootrate() {
         return lootrate;
     }
 
-    public void setLootrate(float lootrate) {
+    public void setLootrate(Float lootrate) {
         this.lootrate = lootrate;
     }
 }

@@ -1,6 +1,5 @@
 package imt.fisa.monsters.persistence.dto;
 
-import imt.fisa.monsters.services.factories.Skill;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.MongoId;
 
@@ -13,19 +12,19 @@ public class MonsterEntity {
 
     private String element;
 
-    private int hp;
+    private Integer hp;
 
-    private int atk;
+    private Integer atk;
 
-    private int def;
+    private Integer def;
 
-    private int vit;
+    private Integer vit;
 
     private Skill[] skills;
 
-    private int level;
+    private Integer level;
 
-    private int exp;
+    private Integer exp;
 
     public String getId() {
         return id;
@@ -51,35 +50,35 @@ public class MonsterEntity {
         this.element = element;
     }
 
-    public int getHp() {
+    public Integer getHp() {
         return hp;
     }
 
-    public void setHp(int hp) {
+    public void setHp(Integer hp) {
         this.hp = hp;
     }
 
-    public int getAtk() {
+    public Integer getAtk() {
         return atk;
     }
 
-    public void setAtk(int atk) {
+    public void setAtk(Integer atk) {
         this.atk = atk;
     }
 
-    public int getDef() {
+    public Integer getDef() {
         return def;
     }
 
-    public void setDef(int def) {
+    public void setDef(Integer def) {
         this.def = def;
     }
 
-    public int getVit() {
+    public Integer getVit() {
         return vit;
     }
 
-    public void setVit(int vit) {
+    public void setVit(Integer vit) {
         this.vit = vit;
     }
 
