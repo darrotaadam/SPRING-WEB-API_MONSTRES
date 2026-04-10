@@ -7,15 +7,17 @@ public class Skill {
     private String ratio_stat;
     private Integer ratio_percent;
     private Integer cooldown;
-    private Float lootrate;
+    private Integer level;
+    private Integer lvlMax;
 
-    public Skill(Integer num, Integer dmg, String ratio_stat, Integer ratio_percent, Integer cooldown, Float lootrate) {
+    public Skill(Integer num, Integer dmg, String ratio_stat, Integer ratio_percent, Integer cooldown,Integer level, Integer lvlMax) {
         this.num = num;
         this.dmg = dmg;
         this.ratio_stat = ratio_stat;
         this.ratio_percent = ratio_percent;
         this.cooldown = cooldown;
-        this.lootrate = lootrate;
+        this.level = level;
+        this.lvlMax = lvlMax;
     }
 
 
@@ -59,11 +61,22 @@ public class Skill {
         this.cooldown = cooldown;
     }
 
-    public Float getLootrate() {
-        return lootrate;
+    public Integer getLevel() {
+        return level;
     }
 
-    public void setLootrate(Float lootrate) {
-        this.lootrate = lootrate;
+    public void setLevel(Integer level) {
+        this.level = level;
     }
+
+    public Integer getLvlMax() {
+        return lvlMax;
+    }
+
+    public void setLvlMax(Integer lvlMax) {
+        this.lvlMax = lvlMax;
+    }
+
+
+
 }
