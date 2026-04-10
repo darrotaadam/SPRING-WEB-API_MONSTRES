@@ -26,6 +26,8 @@ public class MonsterEntity {
 
     private Integer exp;
 
+  // on ne met pas de lootrate, c'est seulement pour les templates.
+
     public String getId() {
         return id;
     }
@@ -89,6 +91,8 @@ public class MonsterEntity {
     public void setSkills(Skill[] skills) {
         this.skills = skills;
     }
+
+
 }
 
 

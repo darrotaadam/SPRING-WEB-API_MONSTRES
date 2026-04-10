@@ -32,6 +32,21 @@ public class MonstreController {
     }
 
 
+    @GetMapping(value="/get-monstre/{id}")
+    public ResponseEntity<MonsterEntity> getMonstreById(
+            @RequestHeader("X-INTERNAL-API-KEY") String InternalApiKey,
+            @PathVariable String id
+    ){
+        System.out.println("[*] /get-monstre?id=" + id);
+        if( !InternalApiKey.equals(internalSecret)){
+            throw new UnauthorizedException("Clé d'API interne invalide");
+        }
+
+        MonsterEntity monster = monsterService.getMonsterById(id);
+        return ResponseEntity.ok(monster);
+    }
+
+
     @PostMapping("/ajoute-monstre")
     public ResponseEntity<CreationMonstreReponse> getAllMonstres(
         @RequestHeader("X-INTERNAL-API-KEY") String InternalApiKey,
